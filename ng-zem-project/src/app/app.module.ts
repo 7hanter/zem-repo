@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DayCounterComponent } from './day-counter/day-counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent
+    MainPageComponent,
+    NavBarComponent,
+    DayCounterComponent
   ],
   imports: [
     BrowserModule
