@@ -1,0 +1,175 @@
+/* VOTE ARTICLE Component Styles*/
+@import "../../theme/colors.scss";
+
+.vote-article__full {
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+.vote-article__container {
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    min-width: 400px;
+    max-width: 600px;
+    padding: 0;
+}
+
+.vote-article__overlay {
+    background: linear-gradient(transparent, $secondary__black-opacity05);
+    height: inherit;
+    display: flex;
+    align-items: flex-end;
+    color: $primary__white;
+}
+
+.vote-article__content{
+    padding: 50px 35px;
+
+    .row {
+        margin: 0;
+    }
+}
+
+.vote-article__like-icon {
+    display: flex;
+    background-color: $btn__like-primary;
+    align-items: center;
+    height: fit-content;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+
+    i {
+        font-size: 20px;
+    }
+}
+.vote-article__dislike-icon {
+    display: flex;
+    background-color: $btn__dislike-primary;
+    align-items: center;
+    height: fit-content;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+
+    i {
+        font-size: 20px;
+    }
+}
+
+.vote-article__name-container {
+    display: flex;
+    align-items: center;
+
+    .vote-article__name {
+        margin: 0;
+        font-size: 42px;
+    }
+}
+
+.vote-article__voting-section-active, .vote-article__voting-section-inactive {
+    padding: 15px 0;
+}
+
+.vote-article__like-btn {
+    display: flex;
+    background-color: $btn__like-primary;
+    align-items: center;
+    height: fit-content;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-right: 8px;
+
+    i {
+        font-size: 20px;
+    }
+
+    &:active {
+        background-color: $secondary__dislike-highlight;
+    }
+
+    &:hover {
+        background-color: $secondary__like-highlight;
+    }
+
+    &:focus {
+        border: 1px solid solid $primary__white;
+    }
+}
+
+.vote-article__dislike-btn {
+    display: flex;
+    background-color: $btn__dislike-primary;
+    align-items: center;
+    height: fit-content;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    margin-right: 8px;
+
+    i {
+        font-size: 20px;
+    }
+
+    &:active {
+        background-color: $secondary__dislike-highlight;
+    }
+    &:hover {
+        background-color: $secondary__dislike-highlight;
+    }
+    &:focus {
+        border: 1px solid $primary__white;
+    }
+}
+
+.vote-article__vote-now {
+    border: 1px solid $primary__white;
+    padding: 2px 10px;
+}
+
+.vote-article__progress-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.vote-article__progress-bar {
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.vote-article__percentage {
+    font-size: 24px;
+}
+
+.vote-article__left-bar {
+    background-color: $btn__like;
+    color: white;
+    padding: 0 10px;
+    display: block;
+
+    i {
+        padding: 0 10px;
+        font-size: 28px;
+    }
+}
+
+.vote-article__right-bar {
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    background-color: $btn__dislike;
+
+    i {
+        padding: 0 5px;
+        font-size: 28px;
+    }
+}
+

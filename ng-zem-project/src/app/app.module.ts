@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DayCounterComponent } from './day-counter/day-counter.component';
 import { VotingPageComponent } from './voting-page/voting-page.component';
 import { VoteArticleComponent } from './vote-article/vote-article.component';
+import { DateAgoPipe } from './date-ago-pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { VoteArticleComponent } from './vote-article/vote-article.component';
     NavBarComponent,
     DayCounterComponent,
     VotingPageComponent,
-    VoteArticleComponent
+    VoteArticleComponent,
+    DateAgoPipe
   ],
   imports: [
     BrowserModule

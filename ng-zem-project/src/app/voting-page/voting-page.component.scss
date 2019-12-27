@@ -1,0 +1,52 @@
+/* VOTING PAGE Section Styles */
+@import "../../theme/colors.scss";
+
+.voting-page__section {
+    padding: 30px 100px;
+}
+
+.voting-page__info {
+    display: inline-flex;
+    padding: 20px;
+    background-color: $primary__ice-grey;
+}
+
+.info-text-title {
+    white-space: nowrap;
+}
+
+.info-text-title__bold-size {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.voting-page__info-description {
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.info-text__close {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.voting-page__articles {
+    padding: 20px 0;
+}
+
+.voting-page__submition {
+    background-color: $primary__ice-grey;
+    padding: 30px 20px;
+    margin: 0;
+    font-size: 28px;
+}
+
+.voting-page__submition-button {
+    background: transparent;
+    border: 2px solid $primary__black;
+    font-size: 18px;
+    padding: 6px;
+}

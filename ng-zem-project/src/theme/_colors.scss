@@ -1,0 +1,40 @@
+/* 
+*** Color Variables ***
+**/
+
+// Primary
+$primary__white: #fff;
+$primary__black: #000;
+$primary__grey: #383838;
+$primary__ice-grey: #d6d6d6;
+
+// Buttons
+$btn__like: rgba(24, 177, 144, 0.7);
+$btn__dislike: rgba(233, 158, 45, 0.7);
+$btn__like-primary: rgba(24, 177, 144);
+$btn__dislike-primary: rgba(233, 158, 45);
+
+// Secondary
+$secondary__white-highlight: #c2c1c1;
+$secondary__like-highlight: darken($btn__like, 10%);
+$secondary__dislike-highlight: darken($btn__dislike, 10%);
+// Black opacity
+$secondary__black-opacity01: rgba(0, 0, 0, 0.1);
+$secondary__black-opacity02: rgba(0, 0, 0, 0.2);
+$secondary__black-opacity03: rgba(0, 0, 0, 0.3);
+$secondary__black-opacity04: rgba(0, 0, 0, 0.4);
+$secondary__black-opacity05: rgba(0, 0, 0, 0.5);
+$secondary__black-opacity06: rgba(0, 0, 0, 0.6);
+$secondary__black-opacity07: rgba(0, 0, 0, 0.7);
+$secondary__black-opacity08: rgba(0, 0, 0, 0.8);
+$secondary__black-opacity09: rgba(0, 0, 0, 0.9);
+// White opacity
+$secondary__white-opacity01: rgba(255, 255, 255, 0.1);
+$secondary__white-opacity02: rgba(255, 255, 255, 0.2);
+$secondary__white-opacity03: rgba(255, 255, 255, 0.3);
+$secondary__white-opacity04: rgba(255, 255, 255, 0.4);
+$secondary__white-opacity05: rgba(255, 255, 255, 0.5);
+$secondary__white-opacity06: rgba(255, 255, 255, 0.6);
+$secondary__white-opacity07: rgba(255, 255, 255, 0.7);
+$secondary__white-opacity08: rgba(255, 255, 255, 0.8);
+$secondary__white-opacity09: rgba(255, 255, 255, 0.9);

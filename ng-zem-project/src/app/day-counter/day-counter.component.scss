@@ -1,0 +1,59 @@
+/* DAY COUNTER component Styles */
+@import "../../theme/colors.scss";
+
+.day-counter__container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+.day-counter__progress-bar {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.day-counter__left-bar {
+    background-color: $secondary__black-opacity03;
+    color: white;
+    padding: 0 10px;
+    position: relative;
+    overflow: visible;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid $secondary__black-opacity05;
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        clear: both;
+        right: -5px;
+    }
+}
+
+.day-counter__label {
+    text-transform: uppercase;
+    text-align: end;
+}
+
+.day-counter__right-bar {
+    padding: 0 15px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    background-color: $secondary__white-opacity07;
+}
+
+.day-counter__number {
+    font-size: 24px;
+    font-weight: 600;
+    padding-right: 7px;
+}
+
+.day-counter__days {
+    font-size: 22px;
+}

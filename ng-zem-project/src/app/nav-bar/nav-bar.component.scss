@@ -1,0 +1,29 @@
+/* NAV BAR Component Styles*/
+@import "../../theme/colors.scss";
+
+app-nav-bar {
+    .navbar {
+        padding: 30px 100px;
+        background: linear-gradient($primary__grey, transparent);
+        color: $primary__white;
+    }
+    .navbar__title {
+        font-weight: bold;
+        font-size: 32px;
+        margin: 0;
+    }
+    .left-menu-bar{
+        padding-left: 0;
+    }
+    .right-menu-bar{
+        padding-right: 0;
+    }
+    .right-menu-bar__span {
+        padding: 0 20px;
+    }
+    .right-menu-bar__search {
+        color: $primary__white;
+        background: none;
+        border: none;
+    }
+}

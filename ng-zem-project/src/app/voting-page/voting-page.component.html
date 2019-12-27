@@ -1,30 +1,26 @@
 <section class="voting-page__section">
-    <div class="voting-page__info row">
-        <div class="col-3">
-            <span class="info-text-title">Speak out. Be Heard</span>
+    <div class="voting-page__info" *ngIf="closeTab">
+        <div class="voting-page__info-title">
+            <span class="info-text-title">Speak out. Be Heard</span><br>
             <span class="info-text-title__bold-size">Be Counted</span>
         </div>
-        <div class="col-7">
+        <div class="voting-page__info-description">
             <span class="info-text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque corporis cum reiciendis tenetur possimus consectetur voluptatem esse. Deleniti, corrupti esse. Distinctio quibusdam voluptate ab excepturi tenetur quod et eos.</span>
         </div>
-        <div class="col-2 info-text__close">
+        <div class="info-text__close" (click)="toggleClose()">
             <i class="material-icons">close</i>
         </div>
     </div>
-
     <div class="voting-page__articles">
-        <h1 class="voting-page__articles-title"></h1>
-        <div class="voting-page__votes-container">
-            <app-vote-article></app-vote-article>
-        </div>
+        <h1 class="voting-page__articles-title">Votes</h1>
+        <app-vote-article ></app-vote-article>
     </div>
-
-    <div class="voting-page__submition">
+    <div class="voting-page__submition row">
         <div class="col-9">
             <span class="voting-page__submition-text">Is there anyone else you would want us to add?</span>
         </div>
-        <div class="col-3">
+        <div class="col-3 text-right">
             <button class="voting-page__submition-button">Submit a Name</button>
         </div>
     </div>
-</section>
+</section>  

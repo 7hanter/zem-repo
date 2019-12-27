@@ -1,0 +1,99 @@
+/* MAIN PAGE Section Styles */
+@import "../../theme/colors.scss";
+
+.main-page__section {
+    min-height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1538175911510-25336f95b07d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.main-page__container {
+    padding: 0 100px;
+}
+.main-page__pope-article{
+    background-color: rgba($primary__grey, $alpha: 0.7);
+    width: 500px;
+    color: $primary__white;
+
+    .main-page__article-container {
+        padding: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.main-page__article-subtitle {
+    font-size: 12px;
+}
+
+.main-page__article-title {
+    font-size: 52px;
+}
+
+.more-info {
+    margin: 0;
+    a  {
+        display: inline-flex;
+        align-items: center;
+    }
+    i {
+        font-size: 16px;
+        padding-right: 8px;
+    }
+}
+
+.text-overline {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.main-page__article-voting {
+    padding: 30px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main-page__voting-buttons{
+    align-self: flex-end;
+    justify-content: start;
+    margin: 0;
+
+    button {
+        border: none;
+        border-radius: 0;
+        padding: 18px;
+        
+        &:active {
+            border: none;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        i {
+            font-size: 32px;
+        }
+    }
+    .like-button {
+        background-color: $btn__like;
+
+        &:hover {
+            background-color: $secondary__like-highlight;
+        }
+    }
+    .dislike-button {
+        background-color: $btn__dislike;
+        
+        &:hover {
+            background-color: $secondary__dislike-highlight;
+        }
+    }
+}

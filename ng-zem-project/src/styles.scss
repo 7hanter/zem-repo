@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "./theme/colors.scss";
+
+@import "./app/day-counter/day-counter.component.scss";
+@import "./app/main-page/main-page.component.scss";
+@import "./app/nav-bar/nav-bar.component.scss";
+@import "./app/voting-page/voting-page.component.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+            color: $secondary__white-highlight;
+        }
+    }
+}

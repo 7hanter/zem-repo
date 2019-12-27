@@ -1,0 +1,38 @@
+[
+    {
+        "likes": 12,
+        "dislikes": 3,
+        "date": "2019-09-25T12:00:00-06:30",
+        "category": "Entertainment",
+        "name": "Kanye West",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque corporis cum reiciendis tenetur possimus consectetur voluptatem esse.",
+        "imgUrl": "https://images.unsplash.com/photo-1432250767374-ee19cba37b52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1518&q=80"
+      },
+      {
+        "likes": 5,
+        "dislikes": 8,
+        "date": "2019-10-25T12:00:00-06:30",
+        "category": "Business",
+        "name": "Mark Zuckerberg",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque corporis cum reiciendis tenetur possimus consectetur voluptatem esse.",
+        "imgUrl": "https://tentulogo.com/wp-content/uploads/Mark-Zuckerberg.jpg"
+      },
+      {
+        "likes": 12,
+        "dislikes": 28,
+        "date": "2019-06-25T12:00:00-06:30",
+        "category": "Politics",
+        "name": "Cristina Fernández de Kirchner",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque corporis cum reiciendis tenetur possimus consectetur voluptatem esse.",
+        "imgUrl": "https://estaticos.elperiodico.com/resources/jpg/3/9/cristina-fernandez-de-kirchner-1577151282193.jpg"
+      },
+      {
+        "likes": 30,
+        "dislikes": 15,
+        "date": "2019-11-25T12:00:00-06:30",
+        "category": "Entertainment",
+        "name": "Malala Yousafzai",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque corporis cum reiciendis tenetur possimus consectetur voluptatem esse.",
+        "imgUrl": "https://static.vix.com/es/sites/default/files/styles/1x1/public/m/malala-yousafzai.jpg"
+      }
+]

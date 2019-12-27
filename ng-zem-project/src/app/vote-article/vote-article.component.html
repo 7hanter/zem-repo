@@ -1,44 +1,53 @@
-<article class="vote-article__container">
-    <div class="vote-article__overlay">
-        <div class="vote-article__content">
-            <div class="row">
-                <div class="vote-article__like-icon">
-                    <i class="material-icons">thumb_up</i>
-                </div>
-                <h2 class="vote-article__name">Name Thompson</h2>
-            </div>
-            <span class="font-weight-bold">1 month ago</span>
-            <span>in Something important</span>
-            <div class="vote-article__voting-section-active">
-                <p class="vote-article__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dicta quidem aliquam laboriosam sit quis expedita. Delectus eligendi, veniam eos veritatis suscipit nobis excepturi eius porro esse deleniti voluptatibus cupiditate.
-                </p>
-                <div class="row">
-                    <button class="vote-article__like-btn">
+<div class="vote-article__full d-flex flex-wrap justify-content-between">
+    <article class="vote-article__container col-md-6"
+            *ngFor="let voteElement of votesData; let i = index"
+            [ngStyle]="{'background-image': 'url(' + voteElement.imgUrl + ')'}">
+        <div class="vote-article__overlay">
+            <div class="vote-article__content">
+                <div class="row vote-article__name-container">
+                    <div class="vote-article__like-icon" *ngIf = "voteElement.likes >= voteElement.dislikes">
                         <i class="material-icons">thumb_up</i>
-                    </button>
-                    <button class="vote-article__dislike-btn">
+                    </div>
+                    <div class="vote-article__dislike-icon" *ngIf = "voteElement.likes < voteElement.dislikes">
                         <i class="material-icons">thumb_down</i>
-                    </button>
-                    <div class="vote-article__vote-now">Vote Now</div>
+                    </div>
+                    <h2 class="vote-article__name">{{ voteElement.name }}</h2>
+                </div>
+                <span class="font-weight-bold">{{ voteElement.date | dateAgoPipe }}</span>
+                <span> in {{ voteElement.category }}</span>
+                <div class="vote-article__voting-section-active" *ngIf = "!voteCheck">
+                    <p class="vote-article__description">
+                        {{ voteElement.description }}
+                    </p>
+                    <div class="row">
+                        <button class="vote-article__like-btn btn btn-primary">
+                            <i class="material-icons">thumb_up</i>
+                        </button>
+                        <button class="vote-article__dislike-btn btn btn-primary">
+                            <i class="material-icons">thumb_down</i>
+                        </button>
+                        <div class="vote-article__vote-now" (click) = "toggleVote(i)">Vote Now</div>
+                    </div>
+                </div>
+                <div class="vote-article__voting-section-inactive" *ngIf = "voteCheck">
+                    <p class="vote-article__description">
+                        Thanks for voting!
+                    </p>
+                    <div class="vote-article__vote-now" (click) = "toggleVote(i)">Vote Again</div>
                 </div>
             </div>
-            <div class="vote-article__voting-section-inactive">
-                <p class="vote-article__description">
-                    Thanks for voting!
-                </p>
-                <div class="vote-article__vote-now">Vote Again</div>
-            </div>
-            <div class="row">
-                <div class="vote-article__left-bar">
-                    <i class="material-icons">thumb_up</i>
-                    <span class="vote-article__persentage">60%</span>
-                </div>
-                <div class="vote-article__right-bar text-right">
-                    <i class="material-icons">thumb_down</i>
-                    <span class="vote-article__persentage">40%</span>
+            <div class="row vote-article__progress-container">
+                <div class="progress vote-article__progress-bar">
+                    <div class="vote-article__left-bar progress-bar text-left" role="progressbar" [ngStyle]="{'width': + (voteElement.likes /(voteElement.likes + voteElement.dislikes))*100 + '%'}" aria-valuenow="voteElement.likes " aria-valuemin="0" aria-valuemax="(voteElement.likes + voteElement.dislikes)">
+                        <i class="material-icons">thumb_up</i>
+                        <span class="vote-article__percentage">{{ voteElement.likes /(voteElement.likes + voteElement.dislikes) | percent }}</span>
+                    </div>
+                    <div class="vote-article__right-bar text-right">
+                        <span class="vote-article__percentage">{{ voteElement.dislikes /(voteElement.likes + voteElement.dislikes) | percent }}</span>
+                        <i class="material-icons">thumb_down</i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</article>
+    </article>
+</div>
